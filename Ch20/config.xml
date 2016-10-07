@@ -1,0 +1,27 @@
+<synth>
+  <style id="button">
+    <font name="Monospaced" size="24" style="BOLD"/>
+    <state value="MOUSE_OVER">
+      <font name="SansSerif" size="48" style="ITALIC"/>
+      <opaque value="TRUE"/>
+      <color value="BLUE" type="BACKGROUND"/>
+    </state>
+    <state value="PRESSED">
+      <font name="Serif" size="36" style="BOLD AND ITALIC"/>
+      <opaque value="TRUE"/>
+      <color value="RED" type="BACKGROUND"/>
+    </state>
+  </style>
+  <bind style="button" type="region" key="Button"/>
+  <style id="textfield">
+     <opaque value="true"/>
+     <state>
+        <color value="#C2E2CF" type="BACKGROUND"/>
+        <color value="#000000" type="TEXT_FOREGROUND"/>
+     </state>
+     <imagePainter method="textFieldBorder" path="text.png"
+        sourceInsets="3 3 3 3" paintCenter="false"/>
+     <insets top="3" left="3" bottom="3" right="3"/>
+  </style>
+  <bind style="textfield" type="region" key="TextField"/>
+</synth>
